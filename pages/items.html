@@ -23,7 +23,6 @@
             top: -50px;
         }
 
-        /* Center Customer Title */
         .title {
             display: flex;
             align-items: center;
@@ -32,7 +31,6 @@
             text-align: center;
         }
 
-        /* Responsive styling for search section */
         .search {
             display: flex;
             flex-direction: column;
@@ -44,7 +42,7 @@
             margin: 10px;
         }
 
-        /* Button shadow styling */
+    
         .btn {
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
@@ -137,7 +135,7 @@
         </div>
     </div>
 
-<!-- Add New Customer Modal -->
+
 <div class="modal fade " id="addCustomerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="addCustomerModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
@@ -180,15 +178,15 @@
         const button = document.getElementById('searchBtn');
         const spinner = button.querySelector('.spinner-border');
 
-        // Show the spinner and disable the button
+      
         spinner.classList.remove('d-none');
         button.disabled = true;
 
-        // Simulate search completion after 2 seconds (or replace with real search logic)
+    
         setTimeout(() => {
-            spinner.classList.add('d-none'); // Hide the spinner
-            button.disabled = false;         // Enable the button
-        }, 2000); // Adjust time as needed
+            spinner.classList.add('d-none'); 
+            button.disabled = false;         
+        }, 2000);
     }
 </script>
 
